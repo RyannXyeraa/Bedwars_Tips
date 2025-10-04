@@ -1,0 +1,66 @@
+body {
+  font-family: Arial, sans-serif;
+  background: linear-gradient(135deg, #3a7bd5, #00d2ff);
+  margin: 0;
+  padding: 0;
+  color: #fff;
+}
+
+header {
+  text-align: center;
+  padding: 20px;
+  background-color: rgba(0,0,0,0.4);
+}
+
+h1 {
+  font-size: 2.5rem;
+}
+
+main {
+  max-width: 700px;
+  margin: 20px auto;
+  padding: 20px;
+  background: rgba(0,0,0,0.3);
+  border-radius: 12px;
+  box-shadow: 0 0 10px rgba(0,0,0,0.5);
+}
+
+.materi ul {
+  list-style: none;
+  padding: 0;
+}
+
+.materi button {
+  display: block;
+  width: 100%;
+  margin: 10px 0;
+  padding: 12px;
+  font-size: 1.1rem;
+  background-color: #27ae60;
+  border: none;
+  border-radius: 8px;
+  color: white;
+  cursor: pointer;
+  transition: transform 0.2s, background-color 0.2s;
+}
+
+.materi button:hover {
+  background-color: #2ecc71;
+  transform: scale(1.05);
+}
+
+.konten {
+  margin-top: 20px;
+  font-size: 1.2rem;
+  line-height: 1.6;
+  padding: 15px;
+  background: rgba(0,0,0,0.4);
+  border-radius: 10px;
+}
+
+footer {
+  text-align: center;
+  padding: 15px;
+  background: rgba(0,0,0,0.5);
+  margin-top: 30px;
+}
