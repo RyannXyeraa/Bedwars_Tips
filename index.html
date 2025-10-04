@@ -1,1 +1,141 @@
+<!DOCTYPE html>
+<html lang="id">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>RyannTO | Minecraft Education</title>
+  <link rel="icon" href="assets/img/logo.png">
+  <style>
+    * {
+      margin: 0;
+      padding: 0;
+      box-sizing: border-box;
+      font-family: 'Poppins', sans-serif;
+    }
 
+    body {
+      color: #fff;
+      background: linear-gradient(135deg, #3a7bd5, #00d2ff);
+      min-height: 100vh;
+      display: flex;
+      flex-direction: column;
+      align-items: center;
+      justify-content: flex-start;
+      text-align: center;
+      padding: 40px 15px;
+      animation: fadeIn 1s ease-in;
+    }
+
+    @keyframes fadeIn {
+      from { opacity: 0; }
+      to { opacity: 1; }
+    }
+
+    header h1 {
+      font-size: 2.8rem;
+      margin-bottom: 10px;
+    }
+
+    header p {
+      font-size: 1.1rem;
+      opacity: 0.9;
+      margin-bottom: 30px;
+    }
+
+    .intro, .tutor {
+      background: rgba(0, 0, 0, 0.3);
+      padding: 20px;
+      border-radius: 12px;
+      max-width: 800px;
+      box-shadow: 0 0 10px rgba(0,0,0,0.3);
+      margin-bottom: 25px;
+    }
+
+    .intro h2, .tutor h3 {
+      margin-bottom: 10px;
+      font-size: 1.7rem;
+    }
+
+    .intro p, .tutor ul {
+      font-size: 1.05rem;
+      line-height: 1.6;
+    }
+
+    .tutor ul {
+      text-align: left;
+      margin-top: 10px;
+      margin-left: 25px;
+    }
+
+    .menu {
+      margin-top: 25px;
+      display: flex;
+      flex-wrap: wrap;
+      justify-content: center;
+      gap: 15px;
+      max-width: 700px;
+    }
+
+    .menu a {
+      text-decoration: none;
+      background: #27ae60;
+      color: white;
+      padding: 15px 25px;
+      border-radius: 8px;
+      font-size: 1.1rem;
+      font-weight: bold;
+      transition: 0.3s;
+      box-shadow: 0 0 10px rgba(0,0,0,0.4);
+    }
+
+    .menu a:hover {
+      background: #2ecc71;
+      transform: scale(1.05);
+      box-shadow: 0 0 15px rgba(0,0,0,0.5);
+    }
+
+    footer {
+      margin-top: 40px;
+      opacity: 0.8;
+      font-size: 0.9rem;
+    }
+  </style>
+</head>
+<body>
+
+  <header>
+    <h1>👋 Selamat Datang di RyannTO</h1>
+    <p>Website edukasi santai untuk belajar Minecraft Bedwars dan hal keren lainnya!</p>
+  </header>
+
+  <section class="intro">
+    <h2>Tentang Website Ini</h2>
+    <p>Hai! Aku Rian (a.k.a. RyannTO). Website ini aku buat untuk berbagi tips dan trik seputar Minecraft, khususnya mode Bedwars 🛏️⚔️.</p>
+    <p>Di sini kamu bisa belajar teknik bridging cepat, PvP, defense, resource management, dan banyak hal menarik lainnya. Cocok banget buat kamu yang mau jadi pro player di server favoritmu!</p>
+  </section>
+
+  <section class="tutor">
+    <h3>📚 Cara Menggunakan Website Ini</h3>
+    <ul>
+      <li>📖 Baca dulu halaman perkenalan untuk tahu isi web ini.</li>
+      <li>🎮 Klik salah satu menu di bawah untuk mulai belajar (misalnya <b>Belajar Bedwars</b>).</li>
+      <li>🧩 Setiap halaman punya materi dan penjelasan langkah demi langkah.</li>
+      <li>⭐ Simpan situs ini biar gampang dibuka lagi.</li>
+    </ul>
+  </section>
+
+  <section class="menu">
+    <a href="bedwars/index.html">📘 Belajar Bedwars</a>
+    <a href="#">⚔️ Teknik PvP</a>
+    <a href="#">🛡️ Bed Defense</a>
+    <a href="#">💡 Tips Bermain</a>
+    <a href="#">🧠 AI Project</a>
+    <a href="#">📂 Tentang Ryann</a>
+  </section>
+
+  <footer>
+    © 2025 RyannTO | Dibuat dengan semangat dan kopi ☕
+  </footer>
+
+</body>
+</html>
