@@ -1,0 +1,157 @@
+<!DOCTYPE html>
+<html lang="id">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Belajar Bedwars | RyannTO</title>
+  <style>
+    * {
+      margin: 0;
+      padding: 0;
+      box-sizing: border-box;
+      font-family: 'Poppins', sans-serif;
+    }
+
+    body {
+      background: linear-gradient(135deg, #3a7bd5, #00d2ff);
+      color: white;
+      min-height: 100vh;
+      display: flex;
+      flex-direction: column;
+      align-items: center;
+      text-align: center;
+      padding: 30px 20px;
+    }
+
+    header h1 {
+      font-size: 2.4rem;
+      margin-bottom: 10px;
+    }
+
+    header p {
+      font-size: 1rem;
+      opacity: 0.9;
+      margin-bottom: 25px;
+    }
+
+    main {
+      background: rgba(0, 0, 0, 0.3);
+      padding: 25px;
+      border-radius: 15px;
+      box-shadow: 0 0 10px rgba(0,0,0,0.4);
+      max-width: 800px;
+      width: 100%;
+    }
+
+    h2 {
+      margin-bottom: 15px;
+    }
+
+    .materi-list {
+      list-style: none;
+      padding: 0;
+    }
+
+    .materi-list button {
+      width: 100%;
+      background: #27ae60;
+      color: white;
+      border: none;
+      padding: 12px;
+      border-radius: 10px;
+      margin: 8px 0;
+      font-size: 1rem;
+      cursor: pointer;
+      font-weight: bold;
+      transition: 0.3s;
+      box-shadow: 0 0 8px rgba(0,0,0,0.4);
+    }
+
+    .materi-list button:hover {
+      background: #2ecc71;
+      transform: scale(1.05);
+    }
+
+    #konten {
+      margin-top: 20px;
+      background: rgba(0,0,0,0.4);
+      padding: 15px;
+      border-radius: 10px;
+      text-align: left;
+      line-height: 1.6;
+    }
+
+    footer {
+      margin-top: 40px;
+      opacity: 0.8;
+      font-size: 0.9rem;
+    }
+  </style>
+</head>
+<body>
+
+  <header>
+    <h1>🛏️ Belajar Bedwars</h1>
+    <p>Panduan lengkap untuk jadi pemain Bedwars yang makin jago! ⚔️</p>
+  </header>
+
+  <main>
+    <h2>Pilih Materi Belajar:</h2>
+    <ul class="materi-list">
+      <li><button onclick="tampilkan('bridging')">🏗️ Bridging Cepat</button></li>
+      <li><button onclick="tampilkan('pvp')">⚔️ Teknik PvP</button></li>
+      <li><button onclick="tampilkan('rush')">🚀 Strategi Rush</button></li>
+      <li><button onclick="tampilkan('defense')">🛡️ Bed Defense</button></li>
+      <li><button onclick="tampilkan('resource')">💰 Resource Management</button></li>
+      <li><button onclick="tampilkan('fireball')">🔥 Fireball & Tools</button></li>
+      <li><button onclick="tampilkan('endgame')">🏆 Endgame Tips</button></li>
+    </ul>
+
+    <div id="konten">
+      <p>Klik salah satu tombol di atas untuk mulai belajar!</p>
+    </div>
+  </main>
+
+  <footer>
+    © 2025 RyannTO | Minecraft Education Project
+  </footer>
+
+  <script>
+    function tampilkan(materi) {
+      const konten = document.getElementById('konten');
+      const isi = {
+        bridging: `
+          <h3>🏗️ Bridging Cepat</h3>
+          <p>Bridging adalah cara cepat menuju pulau lawan. Latih timing klik kanan, dan gunakan sneaking biar gak jatuh. Coba teknik ninja bridging atau god bridging kalau udah mahir!</p>
+        `,
+        pvp: `
+          <h3>⚔️ Teknik PvP</h3>
+          <p>Gunakan W-tap untuk knockback lebih kuat dan block-hit untuk menahan damage. Latihan aim dan reflex itu wajib kalau mau menang duel!</p>
+        `,
+        rush: `
+          <h3>🚀 Strategi Rush</h3>
+          <p>Rush di awal bikin kamu punya kontrol map. Gunakan wool untuk bridging cepat, dan beli pickaxe atau axe untuk hancurin bed musuh.</p>
+        `,
+        defense: `
+          <h3>🛡️ Bed Defense</h3>
+          <p>Bikin kombinasi blok yang kuat, contohnya endstone di dalam dan kayu di luar. Jangan terlalu tebal, tapi cukup bikin musuh butuh waktu lama buat hancurin.</p>
+        `,
+        resource: `
+          <h3>💰 Resource Management</h3>
+          <p>Gunakan iron, gold, dan emerald dengan bijak. Fokus upgrade armor dan senjata dulu, baru item utility seperti fireball dan TNT.</p>
+        `,
+        fireball: `
+          <h3>🔥 Fireball & Tools</h3>
+          <p>Fireball bisa buat knock musuh dari jembatan atau buat loncat (fireball jump). Tools yang bagus bikin kamu lebih cepat nembus pertahanan lawan.</p>
+        `,
+        endgame: `
+          <h3>🏆 Endgame Tips</h3>
+          <p>Gunakan invisibility potion, ender pearl, dan compass buat melacak musuh terakhir. Jangan panik, fokus dan manfaatkan setiap item!</p>
+        `
+      };
+      konten.innerHTML = isi[materi] || `<p>Pilih materi yang ingin kamu pelajari.</p>`;
+    }
+  </script>
+
+</body>
+</html>
